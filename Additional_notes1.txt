@@ -1,0 +1,85 @@
+
+
+systemctl stop firewalld //to stop the firewall
+
+rpm -q "packagename" // to see package install or not
+rpm -q "podman"
+
+
+type of users:- 
+1. super user->> root ->> sign as # in command shell
+2. system user->> less use
+3. local user  -->> sign as $ in command shell
+
+type of shells:-
+
+login shell  			->>useradd -G /bin/bash "username"
+nologinshell			->>useradd -s /sbin/nologin "username"
+
+types of owners:-
+
+1. owner
+2. group owner
+
+how to permanent mount any disk
+go in /root and and find .baserc file enter command there
+pwd :- /root
+ls -al // for show hidden files //-al stand for all
+vim /.baserc
+enter following command
+mount /dev/sr0 /mnt
+then sae the file and exit
+
+
+#! = shiback oparetion oprater
+chmod a+x "path" //to give execute permission
+
+
+NTP 	-network time protocol
+
+we can see permission of files or directory by following
+syntex of permission panle
+
+
+"type""permssion for root""permission for group""permission for local" -----------------------
+example:-drwxr-xr-x ----------------------------------------
+go in the directory 
+ll "dir_path"	
+here you will see like 
+ drwxr-xr-x ------------------------------------------------------------------
+there are three types of perissions
+1.w // for write and newmric values is 2
+2. r //for read and newmric values is 4
+3. x // for execute and newmric values is 1
+
+
+usermod "option" "new_group" "user" //option -G for primary and -g for secoundry // to change group of user
+chgrp "option" "new_owner/new user" "path" // to change onwer of direcotry
+chown "newuser" "old_user_files_path" //users file save in home/username //to change owner of a user or user_files
+
+
+
+// l for link // d for directory //f for files ///these are file types
+
+
+
+example :- drwxr-xr-x. // d for directory numeric value of it 755 // rwx =7;r-x=5;r-x=5;
+permisions of root = 7
+permisions of group = 5
+permisions of local = 5
+
+special permistion types
+suid = 4 //symbol s
+sgid = 2 //symbol s
+statick bit = 1  //symbol t here are symbole depend on execution permission if exection permission true than t
+													else if exection permission false than T
+
+** value of umask = 0022;
+
+
+
+
+tune=ing questions 
+tuned-adm recommend
+tuned-adm profile "given profile"
+tuned-adm active

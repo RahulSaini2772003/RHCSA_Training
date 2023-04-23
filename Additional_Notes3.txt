@@ -1,0 +1,96 @@
+Commands.txt
+
+//user modification
+
+usermod ->>to change configrations of exist user
+groupadd "groupname"	->create user
+tail -5 /etc/group -->list of all groups
+useradd -G "groupname" "username" ->>
+
+whoiam	   ->>it gives name of user
+ifconfig  ->> for ip address deatils
+ip addr   ->> for ip address deatils
+
+how to deletion 
+rm "filename" for normal delition
+rm -f "filename" // for deltion of file forcefully
+rm -r "dirname" //for deletion of directory
+rm -rf "dirname" // for delet dir by force
+
+go in root directory 
+su - root // for go in root directory 
+
+
+//HOstname
+
+hostname 	->> for check hostname
+hostnamectl set-hostname 'primery.hostname.com' 	->>for set hostname
+
+
+//repo
+
+vim /etc/yum.repos.d/all.repo
+
+
+
+useradd -s /sbin/nologin "username"  ->> add an user without login permissions
+id "user" ->> to show membership of groups of users
+useradd -u "user_id" "username" //to create a user with specific id
+
+
+passwd "username"  ->> to set password
+
+
+mkdir "dir_name"  	->> to make directory
+mkdir -p "path+dir_name 	->>to make directiory at specific place
+
+chgrp "group_name" /common/admin -->
+
+
+chmod 2770 /comon/admin ->>to change permision of a user admin
+
+
+vim /etc/chrony.conf 	->> to chnge NTP system
+//in vim  editor enter
+
+systemctl restart chronyd	--> to restert chrony service
+
+
+find / "method" -exec cp -rvf {} "targeted_dir" \;
+
+top // for check live running task 
+
+
+grep "string" "filepath"	->> to show search result on screen
+grep "string" "filepath" > /rs.txt ->> store seaerch result in rs.txt file
+//we dont need to create rs.txt file in grap command it is automatticaly created
+
+to Break passwords of redhat
+nevigate by arrow key to rescue mode //don't press enter on rescue mode
+o rescue mode press e to edit it
+in this 4th line which is start with linex and end with rhgb quiet 
+after rhgb quiet add rd.break with space bitween rd and quiet and press ctrl+x
+press enter //to maintenance
+mount -o remount,rw /sysroot // for remount for read and write permission
+chroot /sysroot //to change root to sysroot
+passwd // to change passwd
+//add new password
+touch /.autorelabel //.stands for to create hidden file and we need to make autorelabel file in root directory.
+exit 
+exit //need two times to exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

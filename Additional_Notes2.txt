@@ -1,0 +1,98 @@
+mkdir-to create directory
+useradd-to create user
+groupadd-to create group
+cp-to copy data
+is-to list content
+useradd -u 2000 jaipur
+to check id jaipur
+passwd jaipur
+create a user barry user id of this user should be 2112 and set password atenorth?
+groupadd- to create group
+tail -5 /etc/group
+crontab -e [to schedule cronjob]
+tar            [to create a backup tar file]
+vim            [file editor]
+chgrp          [to change group owner]
+systemctl      [to change group owner]
+find           [to find file in your system]
+grep           [to grep words from file]
+fdisk        [to create partition]
+pvcreate     [to create physical volume]
+vgcreate     [to create volume group]
+lvcreate     [to create logical volume]
+mkfs.ext3    [for format with file system]
+mount        [to mount partition on a directory]
+lvextent     [to extent or resize partition]
+
+https://bit.ly/3jMh4Xv
+
+
+
+for linux software 
+VMware workstation
+oracle virtual box
+
+
+
+vim /etc/auto.master.d/new.autofs
+enter in editor 
+/-	/etc/auto.misc
+save 
+vim /etc/auto.misc
+useradd remoteuser1
+enter in the below here given directory //example:- /netdir/remoteuser1		-rw,soft,intr	hostname/ip:/netdir/remoteuser1
+save it
+su - remoteuser1
+pwd
+logout
+su - remoteuser1
+
+
+
+visudo
+press ctrl+g // to go in the end
+copy line which has start %wheel and contain nopassword etc
+and paste line just below the line 
+and un comment it
+than save 
+sudo userdd johan1
+add password
+
+
+
+
+how to take backup
+
+tar -cvf   // c for create ; v =verbos; f for forcefully;
+tar -cvf   // we need some option to use like z for gz; j for bz2;J
+tar -cjvf "destiny" "path"   // 
+tar -cjvf /home/baackup.tar.bz2 /etc
+
+
+partition of disk
+fdisk "path of disk"		///mbr = master boot record  		//gpt = guid partition table
+press p //for partition 
+and give size // like +5G
+mkfs.ext4 "/dev/path of above partition" ///to give type of partiton
+lsblk
+
+to create physical volume
+pvcreate /dev/sdb2 //sdb2 shows the partition of disk
+pvs  //to check cretw or not
+pvdisplay //for information of pv
+///physical extend - size of memory blocks
++500M
+mkswap "path"/dev/sdc1
+swapon /dev/"patition" //to on swap //partition for sd1 etc
+vim /etc/fstan
+find a purple color with start with uuid
+
+
+
+mount any disk
+mount /dev/"partition path"  "path where want to mount" // to mount a partition
+
+
+
+
+
