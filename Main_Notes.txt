@@ -1,3 +1,6 @@
+//you need to learn this file only to pass the exam//
+
+
 Q.1  setup an IP adress for primary virtual machine ?
 
 Given:- ip address 172.25.x.11 subnetmask 255.255.255.0 default gateway 172.25.25.254.254 and hostname as primary.net.example.com
@@ -381,4 +384,13 @@ systemctl start then enable
 5 To copy files from one path to another-> cp path1  path2
 6 TO give special permissions to a group/user setfacl -m g:group/user_name:(permissions) (path)
 7 ctrl + d for logout to localuser
-8 rpm -q (package name like:- podman,chroyd,httpd....																																							
+8 rpm -q (package name like:- podman,chroyd,httpd....		
+
+
+
+
+
+
+
+
+
